@@ -10,29 +10,27 @@ The program will:
    - Daylight found in "*Data/somme heures ensoleillement / jour.txt*".
 
 2. Plot a histogram of precipitation/day ("*Plots/Histogram of precipitation per day in 2023.png*").
-3. Plot a histogram of daylight/day (*Plots/Histogram of daylight per day in 2023*).
+3. Plot a histogram of daylight/day ("*Plots/Histogram of daylight per day in 2023*").
 4. Plot a histogram of energies produced/day ("*Plots/Histograms of Energies produced per day in 2023.png*").
 5. Plot a graph of accumulated energies in 2023 ("*Graph of accumulated energies produced in 2023*").
 
 ## Project structure
 
-- "*data/*" contains input data
-- "*outputs/*" contains program outputs
-- "*src/*" contains program code
-- "*soln_sieprog/*" contains the original solution from sieprog.ch (in pure C) for comparison
-- ("*bin/*") generated after compiling C code
-- "*docs/*" contains a notebook illustrating use and validation of the code
+- "*Data/*" contains input data
+- "*Plots/*" contains program outputs
+- "*Programs/*" contains program code (C and Python)
 
 ### Inputs and outputs
 
 Inputs:
-- "*data/capteur.csv*" is a tab-delimited file (not comma-separated).
-- "*data/seedvalues.json*" is a JSON file.
-- "*data/paramsimul.json*" is a JSON file.
+- "*Data/somme précipitations / jour.txt*" is a tab-delimited (three columns) file (";"-separated).
+- "*Data/somme heures ensoleillement / jour.txt*" is a tab-delimited (three columns) file (";"-separated).
 
 Outputs:
-- "*outputs/plausibilite.csv*" is a comma-delimted file.
-- "*outputs/plausibilite.png*" is an image file
+("*Plots/Histogram of precipitation per day in 2023.png*") is a histogram of precipitation/day [mm/day].
+("*Plots/Histogram of daylight per day in 2023*") is a histogram of daylight/day [hours/day]
+("*Plots/Histograms of Energies produced per day in 2023.png*") is a histogram of energies produced/day [kWh/day].
+("*Graph of accumulated energies produced in 2023*") is a graph of accumulated energies in 2023 [kWh/day].
 
 ### Implementation details
 
