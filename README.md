@@ -1,14 +1,14 @@
-# SIE ENG270 Project Repository Example
+# SIE ENG270 Ski_Green_Challenge
 
 ## Project Description
 
-This program simulates the [pollution exercise](https://sieprog.ch/#c/pollution) ("Le bateau pollueur").
+This program simulates how to provide energy to a cable car from green energies.
 
 The program will:
 1. Read in inputs
-   - sensor locations found in "*data/capteurs.csv*",
-   - seed values for random number generation ("*data/seedvalues.json*"), and
-   - parameters of the simulations ("*data/paramsimul.json*").
+   - 
+   - 
+   - 
 2. Generate a table of plausibilities ("*outputs/plausibilite.csv*").
 3. Plot the table of plausibilities ("*outputs/plausibilite.png*").
 
