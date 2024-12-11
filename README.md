@@ -30,7 +30,7 @@ Outputs:
 - ("*Plots/Histogram of precipitation per day in 2023.png*") is a histogram of precipitation/day [mm/day].
 - ("*Plots/Histogram of daylight per day in 2023*") is a histogram of daylight/day [hours/day]
 - ("*Plots/Histograms of Energies produced per day in 2023.png*") is a histogram of energies produced/day [kWh/day].
-- ("*Graph of accumulated energies produced in 2023*") is a graph of accumulated energies in 2023 [kWh/day].
+- ("*Plots/Graph of accumulated energies produced in 2023*") is a graph of accumulated energies in 2023 [kWh/day].
 
 ### Implementation details
 
