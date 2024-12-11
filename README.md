@@ -6,8 +6,8 @@ This program simulates how to provide energy to a cable car from green energies.
 
 The program will:
 1. Read in inputs
-   - 
-   - 
+   - Precipitation found in "*Data/somme précipitations / jour.txt*",
+   - Daylight found in "*somme heures ensoleillement / jour.txt*"
    - 
 2. Generate a table of plausibilities ("*outputs/plausibilite.csv*").
 3. Plot the table of plausibilities ("*outputs/plausibilite.png*").
