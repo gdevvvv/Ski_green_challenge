@@ -7,10 +7,12 @@ This program simulates how to provide energy to a cable car from green energies.
 The program will:
 1. Read in inputs
    - Precipitation found in "*Data/somme précipitations / jour.txt*",
-   - Daylight found in "*somme heures ensoleillement / jour.txt*"
-   - 
-2. Generate a table of plausibilities ("*outputs/plausibilite.csv*").
-3. Plot the table of plausibilities ("*outputs/plausibilite.png*").
+   - Daylight found in "*Data/somme heures ensoleillement / jour.txt*".
+
+2. Plot a histogram of precipitation/day ("*Plots/Histogram of precipitation per day in 2023.png*").
+3. Plot a histogram of daylight/day (*Plots/Histogram of daylight per day in 2023*).
+4. Plot a histogram of energies produced/day ("*Plots/Histograms of Energies produced per day in 2023.png*").
+5. Plot a graph of accumulated energies in 2023 ("*Graph of accumulated energies produced in 2023*").
 
 ## Project structure
 
