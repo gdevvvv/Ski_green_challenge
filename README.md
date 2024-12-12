@@ -36,8 +36,8 @@ Outputs:
 
 Overview:
 - The simulation is handled by C. The C program is compiled to a shared library, which is called by Python via the `ctypes` module.
-- Python handles most of the I/O, which includes reading sensor information and formatting the output of the single point simulation.
-- For the grid simulation, the C program directly writes each simulation result to a CSV file designated by the calling Python script.
+- Python handles most of the I/O, which includes reading sensor information (files from the IDAWEB plateform) and formatting the output of the single point simulation.
+- For the grid simulation, the C program directly writes each simulation result to two python lists (lists of energies) designated by the calling Python script.
 
 Structure. In the directory "*src/*":
 - "*simulategrid.py*":
