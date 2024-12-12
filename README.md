@@ -63,6 +63,8 @@ Python 3.11.7
 $ gcc --version
 gcc (Clang 14.0.6 on darwin) 
 
+```
+
 ## Credits
 
 The code was written by Sacha Meyer (sacha.meyer@epfl.ch) and Gaspard Devaux (gaspard.devaux@epfl.ch)
