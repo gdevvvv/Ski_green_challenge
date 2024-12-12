@@ -40,76 +40,30 @@ Overview:
 - For the grid simulation, the C program directly writes each simulation result to two python lists (lists of energies) designated by the calling Python script.
 
 Structure. In the directory "*src/*":
-- "*simulategrid.py*":
-  - imports "*mylib.py*" as a module, which wraps the compiled C library file.
-  - reads in "*data/capteurs.csv*" and executes the C code.
-- "*analysis.py*":
-  - reads in the generated output ("*outputs/plausibilite.csv*") and makes the plot.
+- "*Projet_CMT.py*":
+  - reads in "*Data/somme précipitations / jour.txt*" and "*Data/somme heures ensoleillement / jour.txt*" and executes the C code.
+  - reads in the generated output ("List_Dam_Energies_rounded", "List_Solar_Energie_rounded") and makes four plots.
 
-In each Python code, the project root directory is assigned using 
-
-```{python}
-import sys
-from pathlib import Path
-ROOT = Path(sys.path[0]).parent
-```
-`sys.path[0]` is the directory of the script or noteoobk file, and not the working directory of the shell from which the code is called. This allows the following commands to produce equivalent output. Starting in the project root directory:
-```
-$ python src/simulategrid.py
-$ cd src && python simulategrid.py
-```
-This convention works for both Python scripts and Jupyter notebooks / Quarto documents, so the following two commands will also generate the same output.
-```
-$ quarto render docs/analysis.qmd
-$ cd docs && quarto render analysis.qmd
-```
+The C program is compiled automatically via the Python line: "os.system("gcc -shared -o libProjet_CMT.so -fPIC ./Programs/Projet_CMT.c")". The C program then changes the python lists and return a copy of each list with changed values. 
 
 ## Instructions
 
 To reproduce results in the report, two steps should be followed:
 
-1. Build (compile) the shared library.
-2. Run the program.
-
-To compile the C code, run the following line in the terminal from the project root directory (location of this README.md file):
-```{sh}
-make
-```
-This command will create a directory called bin/ and populated it with C object files, and the compiled .so file.
-
-To run the Python and C code, run the following line in the terminal from the project root directory:
-```{sh}
-bash run.sh
-```
-This command will run the program and generate all of the output described above.
-
-To generate documentation for the validation, run the following command from the root directory:
-```{sh}
-quarto render docs/analysis.qmd --to pdf
-```
-This generates the file "*docs/analysis.pdf*".
+1. Open the whole folder in VSCode.
+2. Run the Python program.
 
 ## Requirements
 
-Versions of Python and C used are as follows. Optionally, the Quarto version is also included for rendering the "*docs/analysis.qmd*" file. 
+Versions of Python and C used are as follows. 
 ```
 $ python --version
-Python 3.9.18
+Python 3.11.7
 
 $ gcc --version
-gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
-
-$ quarto --version
-1.3.450
-```
-
-The "*requirements.txt*" file for Python packages was generated with the command
-```{sh}
-conda list --export > requirements.txt
-```
-and deleting all but the relevant packages specifically used by this project.
+gcc (Clang 14.0.6 on darwin) 
 
 ## Credits
 
-The code is adapted from the [solutions](https://sieprog.ch/#c/pollution/solutions) of sieprog.ch.
+The code was written by Sacha Meyer (sacha.meyer@epfl.ch) and Gaspard Devaux (gaspard.devaux@epfl.ch)
 
