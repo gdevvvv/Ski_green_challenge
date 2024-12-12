@@ -35,7 +35,7 @@ Outputs:
 ### Implementation details
 
 Overview:
-- The simulation is handled by C. The C program is compiled to a shared library, which is called by Python via the `ctypes` module.
+- The simulation is handled by C. The C program is compiled to a shared library, which is called by Python via the `ctypes` module. All the variables used to describe the specifics of the cable car systme is implemented in C.
 - Python handles most of the I/O, which includes reading sensor information (files from the IDAWEB plateform) and formatting the output of the single point simulation.
 - For the grid simulation, the C program directly writes each simulation result to two python lists (lists of energies) designated by the calling Python script.
 
