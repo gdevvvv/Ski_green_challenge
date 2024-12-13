@@ -44,7 +44,7 @@ Overview:
 Structure. In the directory "*Programs/*":
 - "*Projet_CMT.py*":
   - Reads in "*Data/somme précipitations / jour.txt*" and "*Data/somme heures ensoleillement / jour.txt*" and executes the C code.
-  - Reads in the generated C output (arrays: "Energy_Dam" and "Solar Energy) and generates two new Python"("List_Dam_Energies_rounded", "List_Solar_Energie_rounded") and makes four plots.
+  - Reads in the generated C output (arrays: "Energy_Dam" and "Solar Energy") and generates two new Python"("List_Dam_Energies_rounded", "List_Solar_Energie_rounded") and makes four plots.
 - "*Projet_CMT.c*":
   - Contains the five functions needed for all the outputs.
   - Reads in Python list "Daylight_day" and "Precipitation_day" and calcultes the minimum number of solar pannels and the minimum basin's area needed ("solar" and "area").
