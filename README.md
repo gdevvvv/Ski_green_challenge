@@ -31,6 +31,7 @@ Outputs:
 - ("*Plots/Histogram of daylight per day in 2023*") is a histogram of daylight/day [hours/day]
 - ("*Plots/Histograms of Energies produced per day in 2023.png*") is a histogram of energies produced/day [kWh/day].
 - ("*Plots/Graph of accumulated energies produced in 2023*") is a graph of accumulated energies in 2023 [kWh/day].
+- In the terminal are printed: "Energy_Cabin_per_day_rounded", "Energy_cable_car_2023", "solar" (number of solar pannels) and "area" (area of the square retention bassin.
 
 ### Implementation details
 
