@@ -39,13 +39,17 @@ Overview:
 - The simulation is handled by C. The C program is compiled to a shared library, which is called by Python via the `ctypes` module. All the variables used to describe the specifics of the cable car systme is implemented in C.
 - Python handles most of the I/O, which includes reading sensor information (files from the IDAWEB plateform) and formatting the output of the single point simulation.
 - For the grid simulation, the C program directly writes each simulation result to two python lists (lists of energies) designated by the calling Python script.
+- The C program is compiled automatically via the Python line: "os.system("gcc -shared -o libProjet_CMT.so -fPIC ./Programs/Projet_CMT.c")". The C program then changes the python lists and return a copy of each list with changed values. 
 
-Structure. In the directory "*src/*":
+Structure. In the directory "*Programs/*":
 - "*Projet_CMT.py*":
-  - reads in "*Data/somme précipitations / jour.txt*" and "*Data/somme heures ensoleillement / jour.txt*" and executes the C code.
-  - reads in the generated output ("List_Dam_Energies_rounded", "List_Solar_Energie_rounded") and makes four plots.
+  - Reads in "*Data/somme précipitations / jour.txt*" and "*Data/somme heures ensoleillement / jour.txt*" and executes the C code.
+  - Reads in the generated C output (arrays: "Energy_Dam" and "Solar Energy) and generates two new Python"("List_Dam_Energies_rounded", "List_Solar_Energie_rounded") and makes four plots.
+- "*Projet_CMT.c*":
+  - Contains the five functions needed for all the outputs.
+  - Reads in Python list "Daylight_day" and "Precipitation_day" and calcultes the minimum number of solar pannels and the minimum basin's area needed ("solar" and "area").
+  - Returns two arrays corresponding to the two Python lists above with the energies produced by the solar pannels and the dam.
 
-The C program is compiled automatically via the Python line: "os.system("gcc -shared -o libProjet_CMT.so -fPIC ./Programs/Projet_CMT.c")". The C program then changes the python lists and return a copy of each list with changed values. 
 
 ## Instructions
 
