@@ -1,0 +1,18 @@
+Office fédéral de météorologie et de climatologie, MétéoSuisse
+Operation Center 1
+Postfach 257
+8058 Zürich-Flughafen
+
+Numéro de commande 126358
+
+Nom du fichier                          Type      Station                              Paramètre                                                   Période
+order_126358_SAE_rre150h0_1_data.txt    Données   Säntis                               précipitations, somme horaire                               2023010100-2023123123
+order_126358_SAE_rre150h0_1_legend.txt  Légende   Säntis                               précipitations, somme horaire                               2023010100-2023123123
+order_126358_SAE_rka150d0_1_data.txt    Données   Säntis                               précipitations; somme du jour 0 UTC - 0 UTC                 20230101-20231231
+order_126358_SAE_rka150d0_1_legend.txt  Légende   Säntis                               précipitations; somme du jour 0 UTC - 0 UTC                 20230101-20231231
+order_126358_SAE_sremaxdv_1_data.txt    Données   Säntis                               durée d'ensoleillement; relativement à la somme             20230101-20231231
+                                                                                       journalière maximale possible
+order_126358_SAE_sremaxdv_1_legend.txt  Légende   Säntis                               durée d'ensoleillement; relativement à la somme             20230101-20231231
+                                                                                       journalière maximale possible
+order_126358_SAE_su2000d0_1_data.txt    Données   Säntis                               durée d'ensoleillement; somme journalière                   20230101-20231231
+order_126358_SAE_su2000d0_1_legend.txt  Légende   Säntis                               durée d'ensoleillement; somme journalière                   20230101-20231231
